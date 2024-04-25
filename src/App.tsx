@@ -44,7 +44,9 @@ export function App() {
       setGame(newGame)
     }
   }
-  const header = game.winner ? `${game.winner} is the winner` : 'Tic Tac Toe'
+  const header = game.winner
+    ? `${game.winner} is the winner`
+    : `Tic Tac Toe #${game.id}`
 
   return (
     <div>
