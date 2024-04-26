@@ -59,6 +59,7 @@ export function App() {
             return (
               <li
                 key={columnIndex}
+                className={cell === ' ' ? '' : 'taken'}
                 onClick={() => handleClickCell(rowIndex, columnIndex)}
               >
                 {cell}
